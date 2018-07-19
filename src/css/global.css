@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    color: var(--black-color-1, #222);
+    margin: 0;
+}
+
+body *,
+body *::after,
+body *::before {
+    box-sizing: border-box;
+}
+
+/********************************/
+/*** CONTAINER
+/********************************/
+.hp-container {
+    display: flex;
+    padding: 2rem;
+}
