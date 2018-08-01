@@ -17,3 +17,10 @@ body *::before {
     display: flex;
     padding: 2rem;
 }
+
+/********************************/
+/*** TEXT
+/********************************/
+.hp-bold {
+    font-weight: 900;
+}
