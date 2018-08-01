@@ -4,7 +4,11 @@
 :root {
     --white-color-1: rgb(255, 255, 255);
     --black-color-1: rgb(41, 41, 41);
-    --blue-color-1: rgb(28,70,242);
-    --blue-color-2: rgb(19, 46, 153);
-    --blue-green-color-1: rgb(48, 53, 59);
+    --black-color-2: rgb(63, 63, 63);
+    --black-color-3: rgb(87, 87, 87);
+    --gray-color-1: rgb(235, 235, 235);
+    --blue-green-1: rgb(48,107,106);
+    --blue-green-1-t90: rgba(48,107,106, 0.9);
+    --blue-green-2: rgb(51, 71, 72);
+    --blue-green-2-t90: rgba(47, 65, 66, 0.9);
 }
