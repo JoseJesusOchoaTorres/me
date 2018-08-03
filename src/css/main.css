@@ -48,7 +48,7 @@
 }
 
     .header-title__primary {
-        background: url(../assets/images/leadspace-background-9.jpg) center fixed / cover var(--white-color-1);
+        background: url(../assets/images/leadspace-background-9.jpg) center fixed / cover var(--black-color-1);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         color: var(--black-color-1);
@@ -136,7 +136,7 @@
 /*********************************/
 /*** ABOUT
 /*********************************/
-.about {
+.about-section {
     background: linear-gradient(180deg, var(--blue-green-1-t90), var(--blue-green-1)), url('../assets/images/leadspace-background.jpg') center fixed / cover; 
     padding: 6rem 2rem;
     display: flex;
@@ -148,7 +148,7 @@
         background-color: var(--white-color-1);
         transition: all 0.5s ease;
         padding: 1.5rem 2rem 3rem;
-        border-radius: 8px;
+        border-radius: 6px;
         margin: 1.5rem;
     }
 
@@ -156,11 +156,13 @@
         box-shadow: 0 1px 20px rgba(39, 39, 39, 0.90);
     }
 
-        .card-title {
+        .card-title,
+        .skills-title {
             font-size: 2rem;
         }
 
-        .card-title::after {
+        .card-title::after,
+        .skills-title::after {
             background-color: var(--blue-green-1);
             margin-top: 0.3rem;
             display: block;
@@ -169,7 +171,8 @@
             width: 68px;
         }
 
-        .card-subtitle {
+        .card-subtitle,
+        .skill-subtitle {
             color: var(--black-color-2);
             text-transform: uppercase;
             font-weight: 550;
@@ -250,4 +253,87 @@
         width: 30%;
     }
 
-    
+/*********************************/
+/*** SKILLS
+/*********************************/
+.skills-section {
+    background-color: var(--white-color-1);
+    padding: 4rem 3.5rem;
+    height: 100vh;
+}
+
+    .skills-title {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .skills {
+        justify-content: space-around;
+        display: flex;
+    }
+
+        .skills-container {
+            width: 40%;
+            margin: 2rem;
+        }
+
+            .skills-subtitle {
+                display: inline-block;
+                margin-top: 2.8rem;
+            }
+
+            .skills-ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+                .skills-li {
+                    margin-bottom: 1rem;
+                    display: block;
+                }
+            
+                    .skill-title {
+                        justify-content: space-between;
+                        margin: 0.5rem 0;
+                        display: flex;
+                    }
+
+                        .skill-title,
+                        .skill-level {
+                            color: var(--blue-green-1);
+                            font-weight: 100;
+                        }
+
+                    .progress-bar,
+                    .progress {
+                        border-radius: 0.5rem;
+                        height: 0.5rem;
+                    }
+
+                    .progress-bar {
+                        background-color: var(--gray-color-1, rgb(226, 226, 226));
+                        -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+                        box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+                    }
+
+                    .progress  {
+                        /* background: linear-gradient(30deg, var(--blue-green-1), var(--blue-green-2)); */
+                        background: linear-gradient(30deg, var(--blue-color-1), var(--blue-green-1));
+                    }
+
+                    .progress[aria-valuenow="25"] {
+                        width: 25%;
+                    }
+                    
+                    .progress[aria-valuenow="50"] {
+                        width: 50%;
+                    }
+                    
+                    .progress[aria-valuenow="75"] {
+                        width: 75%;
+                    }
+                    
+                    .progress[aria-valuenow="100"] {
+                        width: 100%;
+                    }
