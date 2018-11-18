@@ -49,9 +49,13 @@
 /*********************************/
 .nav-container {
     border: 1px solid var(--gray-color-1, rgb(226, 226, 226));
-    box-shadow: 0 1px 5px rgba(222, 222, 222, 0.72);
+    box-shadow: 0 1px 5px var(--blue-green-2-t9);
+    background-color: var(--white-color-1);
+    position: -webkit-sticky;
     justify-content: center;
+    position: sticky;
     display: flex;
+    top: 0;
 }
 
     .nav-ul,
@@ -120,13 +124,15 @@
 
         .card-title,
         .skills-title,
-        .resume-title {
+        .resume-title,
+        .contact-title {
             font-size: 2rem;
         }
 
         .card-title::after,
         .skills-title::after,
-        .resume-title::after {
+        .resume-title::after,
+        .contact-title::after {
             background-color: var(--blue-green-1);
             margin-top: 0.3rem;
             display: block;
@@ -226,7 +232,8 @@
 }
 
     .skills-title,
-    .resume-title {
+    .resume-title,
+    .contact-title {
         flex-direction: column;
         align-items: center;
         display: flex;
@@ -329,4 +336,65 @@
         
         .card__alternate:hover {
             box-shadow: 0 1px 10px rgba(161, 161, 161, 0.72);
+        }
+
+/*********************************/
+/*** CONTACT
+/*********************************/
+.contact-section {
+    background-color: var(--white-color-1);
+    color: var(--black-color-3);
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.contact-section a {
+    transition: color 0.3s ease;
+    color: var(--blue-color-1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-section a:hover {
+    color: var(--blue-green-1);
+}
+
+    .contact-message {
+        margin-bottom: 6rem;
+        font-size: 1.3rem;
+    }
+
+        .contact-message p {
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .contact-title {
+            color: var(--black-color-1);
+        }
+
+        /* .contact-subtitle {
+            color: var(--blue-green-1);
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        } */
+
+    .footer__nocopyright {
+        background-image: linear-gradient(-90deg, var(--white-color-1), var(--gray-color-2));
+        border-top: 1px solid var(--gray-color-1);
+        justify-content: space-around;
+        padding: 0.5rem 3.5rem;
+        align-content: center;
+        display: flex;
+    }
+
+        .fa-heart {
+            color: var(--red-color-1);
+            font-size: 0.8rem;
+        }
+    
+        .footer__nocopyright p{
+            line-height: 1.6;
         }

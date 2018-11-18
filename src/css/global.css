@@ -10,6 +10,11 @@ body *::before {
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: var(--gray-color-1); 
+    color: var(--black-color-1);
+}
+
 /********************************/
 /*** CONTAINER
 /********************************/
