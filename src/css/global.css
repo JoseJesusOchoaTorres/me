@@ -24,3 +24,18 @@ body *::before {
 .hp-bold {
     font-weight: 900;
 }
+
+/********************************/
+/*** CARDS
+/********************************/
+.card.card__alternate .card-title::after {
+    content: none;
+}
+
+.card.card__alternate .card-title {
+    margin-bottom: 0;
+}
+
+.card.card.card__alternate .card-subtitle {
+    color: var(--blue-green-1);
+}
