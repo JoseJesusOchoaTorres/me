@@ -1,0 +1,65 @@
+@media (max-width: 992px) {
+    /*********************************/
+    /*** ABOUT, SKILLS, RESUME
+    /*********************************/
+    .about-section,
+    .skills,
+    .resume {
+        flex-wrap: wrap;
+    }
+
+        .about-section .card.whoami,
+        .about-section .card.information,
+        .skills .skills-container,
+        .resume .role {
+            width: 100%;
+        }
+}
+
+@media (max-width: 778px) {
+    /*********************************/
+    /*** NAVIGATION
+    /*********************************/
+    .nav-container .image-profile__container {
+        display: none;
+    }
+
+    /*********************************/
+    /*** CONTACT
+    /*********************************/
+    .footer__nocopyright {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 576px) {
+    /*********************************/
+    /*** ABOUT, SKILLS, RESUME
+    /*********************************/
+    body .about-section,
+    body .skills-section,
+    body .resume-section {
+        padding: 2rem 0.5rem;
+    }
+
+    body .contact-message {
+        padding: 0 0.5rem;
+    }
+
+    /*********************************/
+    /*** NAVIGATION
+    /*********************************/
+    .nav-ul .nav-li a {
+        padding: 1.5rem 1rem;
+    }
+
+    /*********************************/
+    /*** CONTACT
+    /*********************************/
+    .footer__nocopyright {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
