@@ -15,7 +15,7 @@
         -webkit-background-clip: text;
         color: var(--black-color-1);
         word-break: break-word;
-        font-size: 17vmax;
+        font-size: 30vmin;
         font-weight: 900;
         padding: 1rem;
         width: 100%;
@@ -106,7 +106,6 @@
     background: linear-gradient(180deg, var(--blue-green-1-t90), var(--blue-green-1)), url('../assets/images/leadspace-background.jpg') center fixed / cover; 
     padding: 6rem 2rem;
     display: flex;
-    /* height: 100vh; */
 }
 
     .card {
@@ -321,7 +320,6 @@
     .resume {
         justify-content: space-around;
         margin: 4.8rem 0 2.5rem;
-        flex-wrap: wrap;
         display: flex;
     }
 
@@ -364,6 +362,7 @@
     .contact-message {
         margin-bottom: 6rem;
         font-size: 1.3rem;
+        padding: 0 3.5rem;
     }
 
         .contact-message p {
@@ -374,12 +373,6 @@
         .contact-title {
             color: var(--black-color-1);
         }
-
-        /* .contact-subtitle {
-            color: var(--blue-green-1);
-            text-transform: uppercase;
-            font-size: 1.3rem;
-        } */
 
     .footer__nocopyright {
         background-image: linear-gradient(-90deg, var(--white-color-1), var(--gray-color-2));
@@ -395,6 +388,12 @@
             font-size: 0.8rem;
         }
     
-        .footer__nocopyright p{
+        .footer__nocopyright p {
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
             line-height: 1.6;
+        }
+
+        .footer__nocopyright .social-icon:last-child {
+            margin-right: 0;
         }
